@@ -1,0 +1,27 @@
+C.1 - 2. Var khai báo biến trong phạm vi cục bộ (nếu nằm trong một function), hoặc toàn cục (nếu khai báo bên ngoài)
+
+C.2 - 1. True
+
+C.3 - 1. True
+
+(const và let khai báo biến có phạm vi block)
+
+C.4 - 3. Vì object là reference variable vậy nên mặc dù đã được khai báo bằng từ khóa const, vẫn có thể được cập nhật giá trị bên trong một cách gián tiếp (không khai báo lại)
+
+C.5 - 4. Bởi đã dùng template literal vậy nên cụm ${speed} có ý nghĩa thay thế giá trị của speed khi đặt vào trong một string
+
+C.6 - 1. undefined bởi vì khi khai báo obj chưa gán giá trị cho thuộc tính 123, nên khi gọi obj[123] máy sẽ trả về giá trị undefined (chưa xác định)
+
+C.7 - 4. vì array đã được khai báo bằng từ khóa const vậy nên đây là một dãy "bất biến", không thể khai báo lại trực tiếp
+
+C.8 - 2. đối số rest được gán giá trị cho một array, vậy nên khi gán a cho function mystery, ta nhận được giá trị của a là array [1, 23, 4]
+
+C.9 - giá trị gốc của string "..." có độ dài là 3, ngay cả khi dùng toán tử spread 2 lần thì độ dài chuỗi cũng không thay đổi
+
+C.10 - 2. Sử dụng destructuring cũng là một cách ngắn gọn để hoán đổi giá trị của hai biến cho trước
+
+C.11 - 3. error vì function sayHellO chưa được khai báo (ở trên khai báo sayHello)
+
+C.12 - 1. Giá trị của arr không thay đổi vì phương thức map khi được gọi trả về giá trị là một array mới
+
+C.13 - 16, đầu tiên phương thức filter trả về một array chứa các giá trị chẵn (2 và 4), gọi tiếp phương thức reduce trên array này sẽ trả về một giá trị là tổng của các thành phần, cộng thêm giá trị ban đầu là 10 => 2 + 4 + 10 = 16
