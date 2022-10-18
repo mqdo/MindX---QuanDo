@@ -1,3 +1,5 @@
 # MindX - Do Minh Quan's homeworks
 
-Fullstack JavaScript
+Bài tập MindX kỳ 2 - Code Intensive
+
+Bắt đầu từ branch Lesson1, Lesson2,...
