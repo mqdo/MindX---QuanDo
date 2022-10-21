@@ -1,0 +1,144 @@
+.Songs {
+  display: grid;
+  height: 360px;
+  margin: 2rem 0;
+  padding-top: 1rem;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
+  grid-template-rows: repeat(4, 80px);
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.song {
+  padding: 2rem 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.song-image {
+  width: 65px;
+  height: 65px;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.foreground {
+  position: absolute;
+  opacity: 0;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.foreground > i {
+  grid-area: 1;
+  position: absolute;
+}
+
+.play {
+  width: 65px;
+  height: 65px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.more {
+  width: 35px;
+  height: 35px;
+  right: 20px;
+}
+
+.more:hover {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.song:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.song:hover > .foreground {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.song:hover > .song-image {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.song:hover > .info {
+  width: 50%;
+}
+
+.song .info {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.song .info > * {
+  margin: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song .info > h3 {
+  margin-right: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.info > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.song .singers {
+  cursor: pointer;
+}
+
+.song .singers:hover {
+  color: var(--link-text);
+  text-decoration: underline;
+}
+
+.song .singers:not(:first-of-type)::before{
+  content: ", ";
+  color: gray;
+  text-decoration: none;
+}
+
+.vip {
+  position: relative;
+}
+
+.vip .info > * {
+  opacity: 0.5;
+}
+
+.vip .info > h3 {
+  display: block;
+}
+
+.vip .info::after {
+  position: absolute;
+  content: "VIP";
+  font-size: 1rem;
+  background-color: rgb(183, 183, 31);
+  color: black;
+  font-weight: 700;
+  padding: 0 4px;
+  left: 0;
+  border-radius: 2px;
+}

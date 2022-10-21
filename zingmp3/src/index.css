@@ -1,0 +1,21 @@
+:root {
+  --background-color: #0f1a2e;
+  --sub-color: #158370;
+  --text-hover: #0daf94;
+  --link-text: #429eff;
+  --purple-primary: #3b68ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: white;
+  font-size: 10px;
+  cursor: default;
+}

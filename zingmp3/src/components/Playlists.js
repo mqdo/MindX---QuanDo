@@ -1,4 +1,4 @@
-import "./Playlist.css";
+import "./Playlists.css";
 
 const playlists = [
   {
@@ -27,12 +27,30 @@ playlists.forEach((playlist, index) => {
   playlist.image = require(`../assets/playlists/playlist_${index}.jpg`);
 });
 
-function Playlist() {
+function Playlists() {
   return (
-    <div id="Playlist">
+    <div className="Playlists">
       {playlists.map((playlist, index) => (
         <div key={index} className="playlist">
-          <img className="playlist-image" src={playlist.image} alt={playlist.playlistName} />
+          <div className="container">
+            <div className="cover">
+              <button className="like-playlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <button className="play-playlist">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button className="more-playlist">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </div>
+            <img
+              className="playlist-image"
+              src={playlist.image}
+              alt={playlist.playlistName}
+            />
+          </div>
+
           <h3 className="title">{playlist.playlistName}</h3>
           <span className="singers">{playlist.description}</span>
         </div>
@@ -41,4 +59,4 @@ function Playlist() {
   );
 }
 
-export default Playlist;
+export default Playlists;

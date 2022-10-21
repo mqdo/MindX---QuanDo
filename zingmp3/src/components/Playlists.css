@@ -1,0 +1,98 @@
+.Playlists {
+  display: grid;
+  height: 320px;
+  grid-template-columns: repeat(auto-fit, clamp(150px, 15vw, 250px));
+  grid-template-rows: minmax(300px, 1fr);
+  overflow: hidden;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: clamp(150px, 15vw, 250px);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .cover {
+  position: absolute;
+  width: 100%;
+  height: clamp(150px, 15vw, 250px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+}
+
+.container .cover > button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.container .cover .like-playlist:hover,
+.container .cover .more-playlist:hover {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container .cover .play-playlist {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.playlist-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.cover:hover + .playlist-image {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.playlist-image:hover {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.playlist > h3 {
+  font-size: 1.5rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.playlist > h3:hover {
+  color: var(--link-text);
+}
+
+.playlist > span {
+  font-size: 1.5rem;
+  color: gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -1,20 +1,20 @@
 import "./Newly.css";
-import Song from "./Song.js";
+import Songs from "./Songs.js";
 
 function Newly() {
   return (
-    <div id="Newly">
+    <div className="Newly">
       <h2>Mới Phát Hành</h2>
       <div className="mini-navi">
         <div className="song-album">
-          <button>Bài hát</button>
-          <button>Album</button>
+          <button className="choosing">Bài hát</button>
+          <button className="">Album</button>
         </div>
-        <button>
+        <button className="show-all">
           Tất cả <i className="fa-solid fa-chevron-right"></i>
         </button>
       </div>
-      <Song />
+      <Songs />
     </div>
   );
 }

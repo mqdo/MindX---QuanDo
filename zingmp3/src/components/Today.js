@@ -1,11 +1,11 @@
 import "./Today.css";
-import Playlist from "./Playlist";
+import Playlists from "./Playlists";
 
 function Today() {
   return (
-    <div>
+    <div className="Today">
       <h2>Giai điệu ký ức</h2>
-      <Playlist />
+      <Playlists />
     </div>
   );
 }

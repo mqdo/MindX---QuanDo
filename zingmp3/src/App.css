@@ -1,0 +1,11 @@
+.App {
+  margin: 0 auto;
+  width: max(calc(100% - 158px), 680px);
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 3rem 0;
+}

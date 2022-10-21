@@ -1,4 +1,4 @@
-import "./Song.css";
+import "./Songs.css";
 
 const songs = [
   {
@@ -79,19 +79,32 @@ songs.forEach((song, index) => {
   song.image = require(`../assets/songs/song_${index}.jpg`);
 });
 
-function Song() {
+function Songs() {
   return (
-    <div id="Song">
+    <div className="Songs">
       {songs.map((song, index) => (
         <div key={index} className={song.isVip ? "song vip" : "song"}>
+          <button className="foreground play">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button className="foreground more">
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
           <img className="song-image" src={song.image} alt={song.songName} />
-          <h3 className="title">{song.songName}</h3>
-          <span className="singers">{song.singers}</span>
-          <span className="release">{song.release}</span>
+          <div className="info">
+            <span></span>
+            <h3 className="title">{song.songName}</h3>
+            <span>
+              {song.singers.split(", ").map((singer) => (
+                <span className="singers">{singer}</span>
+              ))}
+            </span>
+            <span className="release">{song.release}</span>
+          </div>
         </div>
       ))}
     </div>
   );
 }
 
-export default Song;
+export default Songs;
