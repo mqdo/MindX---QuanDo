@@ -3,19 +3,28 @@ import Light from "./Components/Light";
 import { useState } from "react";
 
 function App() {
-  const [showing, setShowing] = useState(0);
+  const [showing, setShowing] = useState("red-light");
 
   const handleRotation = () => {
-    if (showing === 2) setShowing(0);
-    else setShowing(s => s + 1);
+    switch (showing) {
+      case "green-light":
+        setShowing("red-light");
+        break;
+      case "yellow-light":
+        setShowing("green-light");
+        break;
+      default:
+        setShowing("yellow-light");
+        break;
+    }
   };
 
   return (
     <div className="App">
-      <div className="TrafficLights">
-        <Light color={showing === 0 ? "Red Showing" : "Red"} />
-        <Light color={showing === 1 ? "Yellow Showing" : "Yellow"} />
-        <Light color={showing === 2 ? "Green Showing" : "Green"} />
+      <div className="traffic-lights">
+        <Light color="bg-red" turnOn={showing === "red-light"} />
+        <Light color="bg-yellow" turnOn={showing === "yellow-light"} />
+        <Light color="bg-green" turnOn={showing === "green-light"} />
       </div>
       <button onClick={handleRotation}>Next</button>
     </div>
