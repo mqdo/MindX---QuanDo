@@ -6,11 +6,14 @@ export default function Counter() {
   const handleCountUp = () => {
     setCount(count + 1);
   };
-  
+
   const handleCountDown = () => {
-    if (count <= 1) setCount(0);
-    else setCount(count - 1);
-  }
+    if (count <= 1) {
+      setCount(0);
+    } else {
+      setCount(count - 1);
+    }
+  };
 
   return (
     <div className="Counter">

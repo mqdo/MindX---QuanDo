@@ -9,13 +9,16 @@ export default class CounterClass extends React.Component {
   handleCountUp = () => {
     const prev = this.state.count;
     this.setState({ count: prev + 1 });
-  }
+  };
 
   handleCountDown = () => {
     const prev = this.state.count;
-    if (this.state.count <= 1) this.setState({ count: 0 });
-    else this.setState({ count: prev - 1 });
-  }
+    if (this.state.count <= 1) {
+      this.setState({ count: 0 });
+    } else {
+      this.setState({ count: prev - 1 });
+    }
+  };
 
   render() {
     return (
