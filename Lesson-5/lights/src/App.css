@@ -1,0 +1,52 @@
+.App {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.traffic-lights {
+  margin-top: 3rem;
+  display: flex;
+  width: 160px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+button {
+  cursor: pointer;
+  width: 50%;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}

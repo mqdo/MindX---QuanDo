@@ -1,0 +1,62 @@
+.App {
+  margin: 1rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2, h3 {
+  margin: 0.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.Counter, .CounterClass, .Student, .StudentClass {
+  width: 60%;
+  background-color: #fcc600;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Counter:hover, .CounterClass:hover, .Student:hover, .StudentClass:hover {
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Counter, .CounterClass {
+  flex-direction: row;
+}
+
+button, input {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: inherit;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+button:hover, input:hover {
+  opacity: 0.8;
+}
+
+input {
+  padding-left: 1rem;
+}
