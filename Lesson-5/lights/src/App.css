@@ -5,7 +5,7 @@
   gap: 1rem;
 }
 
-.TrafficLights {
+.traffic-lights {
   margin-top: 3rem;
   display: flex;
   width: 160px;
@@ -16,30 +16,24 @@
   border-radius: 25px;
 }
 
-.Light {
+.light {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  opacity: 0;
-  transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
-.Red {
+.bg-red {
   background-color: red;
 }
 
-.Yellow {
+.bg-yellow {
   background-color: yellow;
 }
 
-.Green {
+.bg-green {
   background-color: green;
-}
-
-.Showing {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 button {
