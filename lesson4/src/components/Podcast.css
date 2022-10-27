@@ -1,0 +1,101 @@
+.Podcast {
+  margin: 0.5rem 0;
+  padding: 1rem 3rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.Podcast:hover {
+  background-color: var(--alpha-bg);
+}
+
+.Podcast h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.rating {
+  align-self: center;
+}
+
+.Podcast img {
+  width: 65px;
+  height: 65px;
+  border-radius: 5px;
+}
+
+.Podcast .info {
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info h3 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author:hover {
+  color: var(--link-text);
+}
+
+.foreground {
+  position: absolute;
+  opacity: 0;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Podcast:hover .foreground {
+  opacity: 1;
+}
+
+.play {
+  width: 65px;
+  height: 65px;
+  left: 32px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.bookmark {
+  width: 35px;
+  height: 35px;
+  bottom: 5px;
+  right: 50px;
+}
+
+.more {
+  width: 35px;
+  height: 35px;
+  bottom: 5px;
+  right: 10px;
+}
+
+.bookmark:hover, .more:hover {
+  border-radius: 50%;
+  background-color: var(--alpha-bg);
+}

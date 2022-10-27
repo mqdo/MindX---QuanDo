@@ -1,0 +1,41 @@
+.App {
+  padding: 2rem 0;
+  margin: 0 auto;  
+  width: clamp(400px, 90%, 800px);
+  display: flex;
+  flex-direction: column;
+}
+
+.TitlePane {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.TitlePane h2 {
+  font-size: 2.4rem;
+  line-height: 1rem;
+}
+
+.AllPodcast {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.AllPodcast::after {
+  position: absolute;
+  content: ">";
+  right: -1rem;
+  transform: scaleY(2.4);
+}
+
+.AllPodcast:hover {
+  color: var(--link-text);
+}

@@ -1,0 +1,6 @@
+.PodcastContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--alpha-bg);
+  border-radius: 10px;
+}
