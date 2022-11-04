@@ -1,0 +1,47 @@
+.income-expense.income {
+  text-align: left;
+}
+
+.income-expense.expense {
+  text-align: right;
+}
+
+.income-expense.expense > .net-amount {
+  color: var(--expense-color);
+}
+
+.income-expense.all-trans {
+  background-color: var(--substitute-color);
+  border-radius: 1.5rem;
+}
+
+.income-expense.all-trans.income {  
+  padding: 1rem 4rem 1rem 1.5rem;
+}
+
+.income-expense.all-trans.expense {  
+  padding: 1rem 1.5rem 1rem 4rem;
+}
+
+.net-amount {
+  font-weight: 500;
+}
+
+.income-expense i {
+  font-size: 1.4rem;
+  margin-right: 3px;
+  padding: 2px 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0.9;
+}
+
+#icon-expense {
+  color: var(--expense-color);
+}
+
+.net-title {
+  font-weight: 400;
+  text-transform: capitalize;
+  opacity: 0.9;
+}

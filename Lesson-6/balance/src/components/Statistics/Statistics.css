@@ -1,0 +1,32 @@
+.transaction-statistics {
+  background-color: var(--secondary-color);
+  height: 660px;
+}
+
+.statistics-filter {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorted-list {
+  position: relative;
+}
+
+.button-sort {
+  position: absolute;
+  right: 1rem;
+  top: -0.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: transparent;
+  border: none;
+}
+
+.button-sort:hover {
+  opacity: 0.8;
+}
+
+.button-sort > img {
+  width: 100%;
+}

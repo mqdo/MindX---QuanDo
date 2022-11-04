@@ -1,0 +1,13 @@
+.add-transaction {
+  position: relative;
+  overflow: hidden;
+  min-height: 660px;
+}
+
+.add-transaction .page-header {
+  color: var(--secondary-color);
+}
+
+.add-transaction .page-header .navigate {
+  color: var(--secondary-color);
+}
