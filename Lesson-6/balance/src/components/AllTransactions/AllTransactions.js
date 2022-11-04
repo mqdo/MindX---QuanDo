@@ -1,6 +1,7 @@
 import "./AllTransactions.css";
 import FilterByTime from "../Filters/FilterByTime/FilterByTime";
 import NetIncome from "../NetIncome/NetIncome";
+import EmptyData from "../EmptyData/EmptyData";
 import TransactionList from "../TransactionList/TransactionList";
 import { useState } from "react";
 
@@ -17,17 +18,16 @@ export default function AllTransactions({ list, showHome }) {
     ]);
 
   const newList = filteredDates
-    ? filteredDates
-        .map((date, index) => {
-          return date !== null ? (
-            <TransactionList
-              key={index}
-              list={list.filter((item) => item.date.includes(date))}
-              header={<h3>{date.split("-").reverse().join(" - ")}</h3>}
-              limit={0}
-            />
-          ) : null;
-        })
+    ? filteredDates.map((date, index) => {
+        return date !== null ? (
+          <TransactionList
+            key={index}
+            list={list.filter((item) => item.date.includes(date))}
+            header={<h3>{date.split("-").reverse().join(" - ")}</h3>}
+            limit={0}
+          />
+        ) : null;
+      })
     : null;
 
   const handleChangeFilter = (e) => {
@@ -45,7 +45,9 @@ export default function AllTransactions({ list, showHome }) {
       </div>
       <FilterByTime filter={filter} handleChange={handleChangeFilter} />
       <NetIncome list={list} page="all-trans" />
-      <div className="transaction-lists">{newList}</div>
+      <div className="transaction-lists">
+        {newList.length > 0 ? newList : <EmptyData />}
+      </div>
     </div>
   );
 }

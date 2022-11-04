@@ -1,0 +1,9 @@
+.empty-data {
+  margin: 5rem 0;
+  text-align: center;
+  color: var(--expense-color);
+}
+
+.empty-data p {
+  font-size: 1.6rem;
+}
