@@ -27,7 +27,7 @@ export default function FilterByYear({ years, handleChange }) {
         <Select
           name="year-filter"
           id="year-filter"
-          value={years[0]}
+          value={years[0] ? years[0] : ""}
           onChange={handleChange}
           size="small"
           color="primary"

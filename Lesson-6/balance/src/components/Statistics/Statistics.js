@@ -13,7 +13,7 @@ export default function Statistics({ list, showHome }) {
 
   const [typeFilter, setTypeFilter] = useState("expense");
   const [yearFilter, setYearFilter] = useState(
-    filteredYears ? filteredYears[0] : "2022"
+    filteredYears ? filteredYears[0] : ""
   );
   const [sortFilter, setSortFilter] = useState("descending");
 
@@ -28,7 +28,7 @@ export default function Statistics({ list, showHome }) {
 
   const title = `${sortFilter === "descending" ? "Top" : "Least"} ${
     typeFilter === "expense" ? "Spending" : "Income"
-  } ${yearFilter}`;
+  } ${yearFilter ? yearFilter : ""}`;
 
   const handleSetType = (e) => {
     setTypeFilter((prev) => e.target.value);

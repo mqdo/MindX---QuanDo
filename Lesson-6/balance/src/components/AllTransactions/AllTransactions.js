@@ -39,7 +39,7 @@ export default function AllTransactions({ list, showHome }) {
     <div className="all-transactions">
       <div className="page-header">
         <button type="button" className="navigate" onClick={showHome}>
-          <i class="fa-solid fa-arrow-left"></i>
+          <i className="fa-solid fa-arrow-left"></i>
         </button>
         <h3>All Transaction</h3>
       </div>
