@@ -1,0 +1,37 @@
+.transaction-item {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-detail {
+  width: 60%;
+}
+
+.transaction-note {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transaction-date {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.transaction-income {
+  color: var(--income-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transaction-expense {
+  color: var(--expense-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,38 @@
+.transaction-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--substitute-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.transaction-type input {
+  display: none;
+}
+
+.type-label {
+  text-align: center;
+  width: 50%;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.type-label.income {
+  color: var(--income-color);
+}
+
+.type-label.income.checked {
+  background-color: var(--income-alpha);
+}
+
+.type-label.expense {
+  color: var(--expense-color);
+}
+
+.type-label.expense.checked {
+  background-color: var(--expense-alpha);
+}

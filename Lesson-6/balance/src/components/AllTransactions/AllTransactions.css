@@ -1,0 +1,8 @@
+.all-transactions {
+  background-color: var(--secondary-color);
+}
+
+.transaction-lists {
+  height: 455px;
+  overflow: auto;
+}

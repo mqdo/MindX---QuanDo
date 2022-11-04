@@ -1,0 +1,22 @@
+.homepage {
+  background-color: var(--substitute-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.list-header {
+  position: relative;
+}
+
+.list-header .see-all {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  opacity: 0.8;
+}
+
+.list-header .see-all:hover {
+  color: var(--primary-color);
+}

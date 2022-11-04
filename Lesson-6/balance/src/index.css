@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #2F7E79;
+  --secondary-color: #F4F6F6;
+  --substitute-color: #E5E5E5;
+  --income-color: #25A969;
+  --expense-color: #F95B51;
+  --income-alpha: rgba(37, 169, 105, 0.2);
+  --expense-alpha: rgba(249, 91, 81, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, p, span {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4, p, span {
+  font-size: 1.4rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  background-color: var(--substitute-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  cursor: pointer;
+}

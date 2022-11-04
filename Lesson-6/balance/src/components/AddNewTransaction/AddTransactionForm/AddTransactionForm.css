@@ -1,0 +1,68 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.add-transaction-form {
+  position: relative;
+  z-index: 2;
+  background-color: var(--secondary-color);
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.08);
+}
+
+.add-transaction-form form {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-label {
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.amount-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.button-clear {
+  position: absolute;
+  right: 0.8rem;
+  background-color: transparent;
+  opacity: 0.5;
+  border: none;
+}
+
+.button-clear:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.button-add-trans {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 2rem;
+}
+
+.button-add-trans:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
