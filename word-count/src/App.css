@@ -1,0 +1,59 @@
+.App {
+  width: clamp(280px, 80%, 500px);
+  display: flex;
+  flex-direction: column;
+  background-color: #fcc600;
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.App h1 {
+  position: relative;
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 1rem;
+}
+
+.App h1::first-letter {
+  font-size: 3.2rem;
+  padding: 0 5px;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: black;
+  color: #fcc600;
+}
+
+.App h1::after {
+  position: absolute;
+  content: "+";
+  font-size: 2rem;
+  transform: rotate(-20deg);
+}
+
+.App textarea {
+  margin: 2rem 0;
+  border: 3px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  outline: none;
+  background-color: transparent;
+  padding: 2rem;
+  font-size: 1.6rem;
+  resize: none;
+}
+
+.App textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.App textarea:focus {
+  border: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.App p {
+  font-size: 1.4rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.8);
+}
