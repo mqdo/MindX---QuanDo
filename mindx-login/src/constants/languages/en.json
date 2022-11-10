@@ -1,0 +1,9 @@
+{
+  "navbar.login": "Login",
+  "navbar.logout": "Logout",
+  "welcome.greeting": "Welcome",
+  "welcome.invite": "Let's go on a trip to",
+  "welcome.option": "Or",
+  "login.label": "Login",
+  "login.placeholder": "Enter your username"
+}
